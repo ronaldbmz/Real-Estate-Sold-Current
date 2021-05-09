@@ -8,14 +8,16 @@ d3.json("/static/data/current_listing.json").then((current_listed_data) => {
   
 		console.log(current_listed_data);
 
-		//*****************getting zipcodes for dropdown*****************
+		//*****************getting zipcodes & cities for dropdown*****************
 		var zipcodes = [];
 		var cities = [];
+		var zip_cities = [];
 
 		for (var i = 0; i < current_listed_data.length; i++){
-		if (zipcodes.includes(current_listed_data[i].ZipCode) === false){
+		if (zip_cities.includes(current_listed_data[i].City + "-" + current_listed_data[i].ZipCode) === false){
 		  zipcodes.push(current_listed_data[i].ZipCode)
 		  cities.push(current_listed_data[i].City)
+		  zip_cities.push(current_listed_data[i].City + "-" + current_listed_data[i].ZipCode)
 		}
 		}
 		
@@ -23,12 +25,14 @@ d3.json("/static/data/current_listing.json").then((current_listed_data) => {
 		zipcodes = zipcodes.slice(1,zipcodes.length)
 		console.log("zipcodes current");
 		console.log(zipcodes);
+		zip_cities = zip_cities.sort((a,b)=>a-b);
+
 		
 
 		//building logic for dropdown values
 		var html = "";
-		for (var i = 0; i < zipcodes.length; i++) {
-		html+="<option value=" + zipcodes[i] + ">" + cities[i] +"-" +zipcodes[i] + "</option>";
+		for (var i = 0; i < zip_cities.length; i++) {
+		html+="<option value=" + zip_cities[i] + ">" + zip_cities[i] + "</option>";
 		}
 		d3.select(".well>select").html(html);
 
@@ -38,11 +42,15 @@ d3.json("/static/data/current_listing.json").then((current_listed_data) => {
 
 		var dropdownMenu = d3.select("#selDataset");
 		// Assign the value of the dropdown menu option to a variable
-		var zip_code = dropdownMenu.property("value");
+		var zip_code_city = dropdownMenu.property("value");
 
-		if (zip_code === ""){zip_code = "75035"}
+		if (zip_code_city === ""){zip_code = "Frisco-75035"}
 
-		return data.ZipCode === zip_code;
+		val = (data.City + "-" + data.ZipCode) 
+		//console.log("val for check")
+		//console.log(val)
+
+		return val === zip_code_city;
 		}
 
 		//*****************processing current listing data*****************
