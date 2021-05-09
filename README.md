@@ -54,3 +54,14 @@ In order to further deep-dive ito the real estate analysis, as a next step I hav
 - For example, in "Frisco-75022" the avg. price of currently available properties for 3 beds is lower compared to avg. price of 2 beds.
 
 ![bar_chart](Images/bar_chart.png)
+
+### 3. Bubble Chart
+The objective of this visualization is to provide user the more flexibility to analyze further at each propperty level for a particular city. This would be used as a final decision making visualization after analyzing previous two charts. Following are the features available in the bubble chart:
+- Using D3 transition, user can interact with the X-Axis (SqFt, Beds, Baths) and Y-Axis (Price, Beds, Baths) to analyze different combination of metrics 
+- On hovering on each bubble, corresponding x-axis and y-axis values can be seen along with ZipCode.
+#### Insights
+- Here, by reviewing the properties through bubble chart user can make better decision based on different metrics
+- For example, in "Fort Worth - 76108" we can observe that most properties available are between ~2,400 to ~2,700 Sq. Ft. area with prices between ~$275K to ~325K.
+- Any user, who would be interested in buying property in this area, the inisghts from this view could be very valuable to make a better decision.
+
+![bubble_chart](Images/bubble_chart.png)
