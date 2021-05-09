@@ -1,10 +1,11 @@
 # Real Estate Analysis Sold vs. Current
 
 ## Objetive
-Most of the real estate websites provide an option of analyzing current and sold properties but individually not together. One at a time, user either can view the currently listed properties or sold properties. In this app, I have built the functionality for the user to review & analyze both current and sold properties together which could help in making better decision.
+Most of the real estate websites provide an option of analyzing current and sold properties seperately. In purchasing or listing a house, price action remains to be the key important attribute in the pricing for buying, selling and listing decision.
+We aim to provide a solution to both the buyers and sellers to give the functionality for the user to review & analyze both current and sold properties together which could help in making better decision.
 
 ## ETL (Data Extraction Transform and Load)
- For this project the data has been scrapped from Redfin real estate website. In order to have sufficient amount of data, I have extracted Sold and Currently listed properties of following 10 cities in Texas using BeautifulSoup in Python:
+ For this project the data has been scrapped from Redfin real estate website. In order to have sufficient amount of data, we have extracted Sold and Currently listed properties of following 10 cities in Texas using BeautifulSoup in Python: 
 - Dallas
 - Fort Worth
 - Plano
