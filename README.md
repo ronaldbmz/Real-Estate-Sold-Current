@@ -1,11 +1,12 @@
 # Real Estate Analysis Sold vs. Current
 
 ## Objetive
-Most of the real estate websites provide an option of analyzing current and sold properties seperately. In purchasing or listing a house, price action remains to be the key important attribute in the pricing for buying, selling and listing decision.
-We aim to provide a solution to both the buyers and sellers to give the functionality for the user to review & analyze both current and sold properties together which could help in making better decision.
+Most of the real estate websites provides an option of analyzing current and sold properties seperately. In purchasing or listing a house, price action remains to be the key important attribute in the pricing for buying, selling and listing decision.
+We aim to provide a visual solution to both the buyers and sellers to give the functionality for the user to review & analyze both current and sold properties together which could help for a much better listing or buying decision.
 
 ## ETL (Data Extraction Transform and Load)
- For this project the data has been scrapped from Redfin real estate website. In order to have sufficient amount of data, we have extracted Sold and Currently listed properties of following 10 cities in Texas using BeautifulSoup in Python: 
+ For this project the data has been scrapped from Redfin real estate website. 
+ In order to have sufficient amount of data, we have extracted Sold and Currently listed properties of following 10 cities in Texas using BeautifulSoup in Python: 
 - Dallas
 - Fort Worth
 - Plano
@@ -27,17 +28,17 @@ Also, to have data consistency, the following key attributes are being extracted
 - City
 - ZipCode
 
-Once extracted, the data was cleaned and transformed into json and csv format in order to load in JavaScript query to build webpages.
+Once extracted, the data was cleaned and transformed into json and csv format to load in JavaScript query to build webpages.
 
 ## Visualization
 To analyze the extracted real estate data,The following visualizations have been built using JavaScipt Plotly and D3:
 
 ### 1. Cluster Map Chart
 The objective of this visualization is to provide the user the flexibity to review the number of sold and currently avaialble properties using actual geographic map view. 
-Following are the features available in the map chart:
+The following are features available in the map chart:
 - Sold properties are shown in "green" color with different gradients based on the number of properties being sold. The more the properties sold, the darker the color is.
 - Current available properties are shown in "red" color, with same different gradients based on number of properties being available.
-- In order to give customized color gradients based on count of properties sold/available, function "L.DivIcon" from "L.markerClusterGroup" is being updated with different class names to keep each segment separate.
+- In order to give a customized color gradient based on count of properties sold/current listing, function "L.DivIcon" from "L.markerClusterGroup" is being updated with different class names to keep each segment separate.
  
 #### Insights
 - At a higher level, we can observe that Frisco and Irving are the hotspot areas as there are more than 100 properties being currently avaialble and more than 100 properties being sold in the past 6 months.
