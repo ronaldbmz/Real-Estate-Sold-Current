@@ -65,3 +65,11 @@ The objective of this visualization is to provide user the more flexibility to a
 - Any user, who would be interested in buying property in this area, the inisghts from this view could be very valuable to make a better decision.
 
 ![bubble_chart](Images/bubble_chart.png)
+
+## Files Available
+Here, please find following files for reference:
+- Python jupyter notebook file for ETL process
+- Index.html file used as web landing page
+- Data sources in json and csv format
+- JavaScipt files: for MapChart, BarChart and Bubble Chart
+- css files for front end formatting
