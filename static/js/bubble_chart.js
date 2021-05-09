@@ -153,7 +153,7 @@ function updateToolTip(chosenXAxis, chosenYAxis, circlesGroup) {
 
 //*****************filter data*****************
 function filterData(data, inputValue) {
- return data.City === "Fort Worth";
+ return data.City === "Frisco";
 }
 
 // Function called by DOM changes
