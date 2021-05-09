@@ -19,8 +19,8 @@ Most of the real estate websites provide an option of analyzing current and sold
 Also, to have data consistency, following key attributes are being extracted from the Sold & Currently listed properties:
 - Coordinates of property located (Latitude & Longitude extracted using GeoCod API)
 - Price
-- # of Beds
-- # of Baths
+- Number of Beds
+- Number of Baths
 - Square Ft. Area
 - Address
 - City
@@ -31,5 +31,14 @@ Once extracted, the data was cleaned and transformed into json and csv format in
 ## Visualization
 To analyze the extracted real estate data, I have built the following visualizations using JavaScipt Plotly and D3:
 
-### 1. Map Chart
+### 1. Cluter Map Chart
+The objective of this visualization to provide user the flexibity to review the number of sold and currently avaialble properties using actual geographic map view. Following are the features available in the map chart:
+- Sold properties are shown in "green" color with different gradients based on the number of properties being sold. The more the properties sold, the darker the color is.
+- Current available properties are shown in "red" color, with same different gradients based on number of properties being available.
+- User can zoom-in or zoom-out in order to split or cluster the points respectively. 
+
+#### Insights
+- At higher level, we can observe that Frisco and Irving are the hotspot areas as there are more than 100 properties being currently avaialble and more than 100 properties being sold in the past 6 months.
+- On the other hand, we can notice that in the past 6 months only ~20 properties being sold in Fort Worth area and around same number of properties are currently available as well.
+
 ![map_chart](Images/map_chart.png)
