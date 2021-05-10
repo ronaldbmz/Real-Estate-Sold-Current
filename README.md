@@ -49,7 +49,7 @@ The following are features available in the map chart:
 ### 2. Bar Chart
 In order to further deep-dive ito the real estate analysis, as a next step, compartive bar charts are built to show the avg. prices of the properties being sold & avaialble across the number of beds. Following are the features available in the bar chart:
 - User can interact with the bar chart using the dropdown filter which contains the City & ZipCode values
-- On hovering on bar charts use can review the avg. prices corresponding to number of beds
+- On hovering on bar charts user can review the avg. prices corresponding to number of beds
 
 #### Insights
 - Following up on the above map chart insights, now we can further deep-dive into each of the cities (like Irving, Frisco and Fort Worth) to understand why Frisco & Irving are hotspot areas and why not Fort Worth.
