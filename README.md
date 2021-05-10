@@ -38,7 +38,7 @@ The objective of this visualization is to provide the user the flexibity to revi
 The following are features available in the map chart:
 - Sold properties are shown in "green" color with different gradients based on the number of properties being sold. The more the properties sold, the darker the color is.
 - Current available properties are shown in "red" color, with same different gradients based on number of properties being available.
-- In order to give a customized color gradient based on count of properties sold/current listing, function "L.DivIcon" from "L.markerClusterGroup" is being updated with different class names to keep each segment separate.
+- In order to give a customized color gradient based on number of properties sold/current listing, function "L.DivIcon" from "L.markerClusterGroup" is being updated with different class names to keep each segment separate.
  
 #### Insights
 - At a higher level, we can observe that Frisco and Irving are the hotspot areas as there are more than 100 properties being currently avaialble and more than 100 properties being sold in the past 6 months.
