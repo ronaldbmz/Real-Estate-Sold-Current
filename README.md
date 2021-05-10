@@ -1,7 +1,7 @@
 # Real Estate Analysis Sold vs. Current
 
 ## Objective
-Most of the real estate websites provides an option of analyzing current and sold properties seperately. In purchasing or listing a house, price action remains to be the key important attribute in the pricing for buying, selling and listing decisions.
+Most of the real estate websites provides an option of analyzing current and sold properties separately. In purchasing or listing a house, price action remains to be the key important attribute in the pricing for buying, selling and listing decisions.
 We aim to provide a visual solution to both the buyers and sellers to give the functionality for the user to review & analyze both current and sold properties together which could help for a much better listing or buying decision.
 
 ## ETL (Data Extraction Transform and Load)
