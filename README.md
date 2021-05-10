@@ -54,7 +54,7 @@ In order to further deep-dive ito the real estate analysis, as a next step, comp
 #### Insights
 - Following up on the above map chart insights, now we can further deep-dive into each of the cities (like Irving, Frisco and Fort Worth) to understand why Frisco & Irving are hotspot areas and why not Fort Worth.
 - Also, using this visualization we can compare the avg. prices of properties across number of beds and analyze how much is the difference in the avg. prices of properties based on beds.
-- For example, in "Frisco-75022" the avg. price of currently available properties for 3 beds is lower compared to avg. price of 2 beds.
+- For example, in "Frisco-75034" the avg. price of currently available properties for 3 beds is almostsame as vg. price of 2 beds.
 
 ![bar_chart](Images/bar_chart.png)
 
