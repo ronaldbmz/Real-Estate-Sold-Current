@@ -47,7 +47,7 @@ The following are features available in the map chart:
 ![map_chart](Images/map_chart.png)
 
 ### 2. Bar Chart
-In order to further deep-dive ito the real estate analysis, as a next step I have built a compartive bar chart to show the avg. prices of the properties being sold & avaialble across the number of beds. Following are the features available in the bar chart:
+In order to further deep-dive ito the real estate analysis, as a next step, compartive bar charts are built to show the avg. prices of the properties being sold & avaialble across the number of beds. Following are the features available in the bar chart:
 - User can interact with the bar chart using the dropdown filter which contains the City & ZipCode values
 - On hovering on bar charts use can review the avg. prices corresponding to number of beds
 
