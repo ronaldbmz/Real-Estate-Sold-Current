@@ -1,7 +1,7 @@
-# Real Estate Analysis Sold vs. Current
+# Real Estate Analysis Sold vs. Current Price Action
 
 ## Objective
-Most of the real estate websites provides an option of analyzing current and sold properties separately. In purchasing or listing a house, price action remains to be the key important attribute in the pricing for buying, selling and listing decisions.
+Most of the real estate websites provides an option of analyzing current and sold properties separately but not visiually together. Also, most real estate websites already have functions that lets you do a research on individual attributes and location information. In purchasing or listing a house, price action remains to be the key important attribute in the pricing for buying, selling and listing decisions.
 The aim is to provide a visual solution to both the buyers and sellers to give the functionality for the user to review & analyze both current and sold properties together which could help for a much better listing or buying decision.
 
 ## ETL (Data Extraction Transform and Load)
@@ -41,8 +41,8 @@ The following are features available in the map chart:
 - In order to give a customized color gradient based on number of properties sold/current listing, function "L.DivIcon" from "L.markerClusterGroup" is updated in JavaScript to have different class names in HTML and those class names are further used in CSS to define the color coding for each cluster group.
  
 #### Insights
-- At a higher level, we can observe that Frisco and Irving are the hotspot areas as there are more than 100 properties being currently avaialble and more than 100 properties being sold in the past 6 months.
-- On the other hand, we can notice that in the past 6 months only ~20 properties being sold in Fort Worth area and around same number of properties are currently available as well.
+- At a higher level, we can observe that Frisco and Irving are hotspot areas as there are more than 100 properties being currently avaialble and more than 100 properties being sold in the past 6 months.
+- On the other hand, we can see that in the past 6 months only ~20 properties being sold in Fort Worth area and around same number of properties are currently available as well.
 
 ![map_chart](Images/map_chart.png)
 
